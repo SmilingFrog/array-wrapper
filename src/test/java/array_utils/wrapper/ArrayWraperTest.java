@@ -12,7 +12,7 @@ public class ArrayWraperTest {
 	public void givenOneDimensionalArrayWrapsIt() {
 		int[] arr = { 1, 2, 3, 4, 5, 6 };
 		ArrayWrapper aw = ArrayWrappers.wrap(arr);
-//		assertEquals(aw.toString(), Arrays.toString(arr));
+		assertEquals(ArrayWrappers.toString(aw), "[1, 2, 3, 4, 5, 6]");
 	}
 
 	@Test
