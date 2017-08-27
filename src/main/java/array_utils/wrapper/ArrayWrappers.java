@@ -223,6 +223,10 @@ public class ArrayWrappers {
 	}
 
 	public static ArrayWrapper wrap(int[] arr) {
+
+		if(arr == null){
+			throw new IllegalArgumentException();
+		}
 		return new ArrayWrapper1D(arr);
 	}
 

@@ -8,6 +8,12 @@ import org.junit.Test;
 
 public class ArrayWraperTest {
 
+	@Test(expected=IllegalArgumentException.class)
+	public void givenNullThrowsException() throws Exception {
+		int[] arr = null;
+		ArrayWrapper aw = ArrayWrappers.wrap(arr);
+	}
+
 	@Test
 	public void givenOneDimensionalArrayWrapsIt() {
 		int[] arr = { 1, 2, 3, 4, 5, 6 };
